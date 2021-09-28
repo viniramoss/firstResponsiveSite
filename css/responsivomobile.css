@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+html {
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: .07em;
+}
+a {
+    text-decoration: none;
+}
+.icon-play {
+    box-sizing: border-box;
+    height: 5em;
+    display: none;
+}
+.icon-play img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.clear-fix::after {
+    content: " " ;
+    display: block;
+    clear: both;
+}
+.hidden {
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+.button {
+    border-radius: .45em;
+    display: inline-block;
+    padding: 1em 2em;
+    color:white;
+    background-color: rgb(56, 190, 190);
+}
+.button:hover {
+    background-color: rgb(48, 153, 153) ;
+}
+.top-header {
+    text-align: center;
+}
+.top-header-logo {
+    margin: 1em;
+}
+.nav-header {
+    background-color:  #612674;
+    text-align: center;
+}
+.nav-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-header a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.nav-header a:hover {
+    background-color: #8a46a1;
+}
+.container-mid-1 {
+    padding: 1.5em;
+    text-align: center;
+    background: #f1efef;
+}
+
+.section-1-title {
+    color: #612674;
+    font-size: 1.375em ;
+    margin: 1.375em;
+}
+.section-1-subtitle {
+    color: #a87bb7;
+    font-size: .95em;
+    line-height: 1.5em;
+}
+.title-mid {
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+.section-2 p{
+    line-height: 1.5em;
+    color: #222222;
+}
+.section-2 {
+    box-sizing: border-box;
+    margin-top: 3em;
+}
+span[class^=icon] {
+    font-size: 3.5em ;
+    color: #652e79;
+}
+.container-mid-2 {
+    padding-left: 2em;
+}
+.title-main {
+    color: #652e79;
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: .08em;
+}
+.container-mid-2 p {
+    display: inline-block;
+    color: #222222;
+    width: 90%;  
+    line-height: 1.2em;
+}
+.footer-main {
+    margin-top: 7em;
+    text-align: center;
+    background-color: #25303e;
+    padding-bottom: 1.5em;
+    color: #83969f;
+}
+a[class^=icon] {
+    color: white;
+}
+a[class^=icon]:hover {
+    color: rgb(22, 180, 201);
+}
+.social-media {
+    padding-top: .5em;
+    background-color: #303d4c;
+    list-style: none;
+}
+.social-media li {
+    display: inline-block;
+    padding-right: 1.5em;
+    font-size: 1.2em;
+}
+@media screen and (min-width: 48.75em) {
+    body {
+        position: relative;
+    }
+    .icon-play {
+        display: block;
+    }
+    .col-1-4 {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+    .container-mid-1 {
+        padding: 0;
+    }
+    .section-1 {
+        background: #521a66;
+        padding: 2em;
+    }
+    .section-1-title, .section-1-subtitle {
+        color: white;
+    }
+    .section-1 .button {
+        margin-top: 1em;
+    }
+    .top-header {
+        background: #f1efef;
+    }
+    .top-header-logo {
+        float: left;
+    }
+    .nav-header {
+        background-color: transparent ;
+        float: right;
+
+    }
+    .nav-header ul {
+        position: absolute;
+        top: 2em;
+        right: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-header li {
+        display: inline-block;
+    }
+    .nav-header a {
+        color: #713a84;
+    }
+    .nav-header a:hover {
+        background-color: #8a46a141
+    }
+    .container-mid-2 a[class^=button] {
+        float: right;
+        margin-right: 3em;
+    }  
+}
+
+@media screen and (min-width: 62.5em) {
+    .icon-play {
+        height: 7em;
+        display: block;
+    }
+    .section-1 {
+        background-image: url(../responsivoimg/bg_topo_1198x670.jpg);
+        background-size: cover;
+        background-position: bottom right;
+
+        height: 35em - 18em;
+        padding-top: 18em ;
+    }
+}
+
+@media screen and (min-width: 74em) {
+    .icon-play {
+        display: block;
+    }
+    .generalwidth {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-header ul {
+        margin-right: 10em;
+    }
+    .section-1 {
+        background-image: url(../responsivoimg/bg_topo_1600x1374.jpg);
+        background-size: cover;
+        background-position: center top;
+    }
+    .row {
+        padding-left: 2em;
+    }
+    .col-1-4 {
+        width: 23%;
+        margin: 1%;
+    }
+    .col-1-2 {
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    .container-mid-2 a[class^=button] {
+        float: none;
+    }
+
+}
+    
